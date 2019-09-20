@@ -1,0 +1,9 @@
+.deleteButton {
+    float: right;
+}
+.noteCardSection {
+    border: 1px solid black;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+}

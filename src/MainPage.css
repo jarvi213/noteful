@@ -1,0 +1,8 @@
+.interactiveScreen {
+    display: flex;
+    flex-direction: row;
+}
+.detailsScreen {
+    border: 1px solid black;
+    width: 66vw;
+}

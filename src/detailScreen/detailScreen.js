@@ -6,7 +6,8 @@ class DetailScreen extends React.Component {
     render() {
         return(
             <section className='detailsScreen'>
-                < NoteCard />
+                < NoteCard 
+                    notePropPass={this.props.noteProps} />
             </section>
         )
     }

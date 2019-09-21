@@ -3,13 +3,16 @@ import './sidebar.css'
 import FolderCard from './FolderCard'
 
 class Sidebar extends React.Component {
-    render() {
+
+    render(props) {
         return (
             <nav className="sidebarNav">
-            < FolderCard />
-            </nav>
-        )
-    }
-}
+            < FolderCard 
+                folderPropPass={this.props.folderProps}
+             />
+            </nav> 
+        ) 
+    } 
+} 
 
 export default Sidebar;

@@ -1,24 +1,21 @@
 import React from 'react';
-import DUMMYSTORE from './dummyStore.js';
+import './FolderCard.css';
 
- /* class FolderCard extends React.Component {
-  render() {
+ class FolderCard extends React.Component {
+  
+  render(props) {
+    console.log(this.props)
     return (
+      
       <section className='Folder'>
-        <h2>Folder Name</h2>
+        { this.props.folderPropPass.map(folder => { return <h2 className="folderLink" key={folder.id}>
+        {folder.name}</h2> 
+            }) 
+        }
         <button>Add Folder</button>
       </section>
     )
   }
-} */
+} 
 
-export default function FolderCard(props) {
-  const folderName = DUMMYSTORE.find(p =>
-    p.id === props.match.params.FolderNameId
-  )
-  return (
-    <section className='Folder'>
-      <h2>{folderName.name}</h2>
-    </section>
-  )
-}
+export default FolderCard;
